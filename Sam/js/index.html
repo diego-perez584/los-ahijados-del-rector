@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Presentación - Samantha</title>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Luckiest Guy', cursive;
+      background: url("../img/clashroyale.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 50px;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-size: 4em;
+      color: gold;
+      text-shadow: 3px 3px 5px #000;
+    }
+
+    h2, h3 {
+      font-size: 2em;
+      margin: 20px 0;
+      color: #fff;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    .container {
+      background-color: rgba(1, 7, 89, 0.8); /* azul con transparencia */
+      border: 4px solid gold;
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 700px;
+      margin: auto;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      position: relative;
+      z-index: 2;
+    }
+
+    .character {
+      position: absolute;
+      bottom: 0;
+      width: 150px;
+      z-index: 1;
+    }
+
+    .left {
+      left: 0;
+      animation: moveLeft 8s linear infinite;
+    }
+
+    .right {
+      right: 0;
+      animation: moveRight 8s linear infinite;
+    }
+
+    @keyframes moveLeft {
+      0% { transform: translateX(-200px); }
+      50% { transform: translateX(100px); }
+      100% { transform: translateX(-200px); }
+    }
+
+    @keyframes moveRight {
+      0% { transform: translateX(200px); }
+      50% { transform: translateX(-100px); }
+      100% { transform: translateX(200px); }
+    }
+
+    .gif-container {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>¡Hola!</h1>
+    <h2>Me llamo Samantha Mancilla Obregón</h2>
+    <h3>Mi especialidad es jugar Clash Royale</h3>
+    <h2>Y me gusta comer,dormir y ver peliculas</h2>
+
+    <!-- GIF embebido de Tenor -->
+    <div class="gif-container">
+      <div class="tenor-gif-embed" data-postid="10220389817218414567" data-share-method="host" data-aspect-ratio="0.983607" data-width="100%">
+        <a href="https://tenor.com/view/clash-royale-emote-clash-royale-clash-of-clans-clash-clash-a-rama-gif-10220389817218414567">
+          Clash Royale Emote
+        </a> from 
+        <a href="https://tenor.com/search/clash+royale+emote-stickers">Tenor</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Personajes animados -->
+  <img src="https://media.tenor.com/Prxz_kHdvkoAAAAi/clash-royale-wizard.gif" class="character left" alt="Mago Clash Royale">
+  <img src="https://media.tenor.com/xjv9XbaxH1EAAAAi/mini-pekka.gif" class="character right" alt="Mini PEKKA Clash Royale">
+
+  <!-- Script de Tenor (necesario para mostrar el GIF embebido) -->
+  <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+</body>
+</html>
